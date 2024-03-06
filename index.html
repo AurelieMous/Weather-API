@@ -9,18 +9,20 @@
 <body>
   <header>
     <form>
-        <label>Ville :</label><input type="text" name="ville" id="ville">
-        <button class="validerVille" type="boutton">Rechercher</button>
+        <label>Ville :</label>
+        <input type="text" name="ville" id="ville" placeholder="Nom de ville">
+        <button class="validerVille" type="button" id="validerVille" onclick="AppelerMeteo(ville.value)">Rechercher</button>
     </form>
   </header>
     <section>
-        <di>
-            <h1 class="nomVille">Nom de ville</h1>
-        </di>
-            <h1 class="temperatureAffichage">Température</h1>
+        <div class="afficher-meteo" id="afficher-meteo">
+          <!--Stock infos-->
         </div>
-        <div>
-            <h1 class="meteo">Etat du ciel</h1>
+        <div class="vent" id="vent">
+          <img src="images/vent.png" alt="vent">
+        </div>
+        <div class="humidite" id="humidite">
+          <img src="images/humidite.png" alt="humidité">
         </div>
     </section>
     <footer>Crée par Aurélie Moustardier</footer>
