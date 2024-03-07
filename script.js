@@ -3,6 +3,10 @@ const APIKey = '0eee8175d5eda1d78eee24d6db88d7d6';
 let ville = document.getElementById("ville");
 
 async function AppelerMeteo(input) {
+    document.getElementById("afficher-meteo").innerHTML = ""
+    document.getElementById("humidite").innerHTML = ""
+    document.getElementById("vent").innerHTML = ""
+
     const reponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${APIKey}&lang=fr&units=metric`)
     const meteo = await reponse.json()
     console.log(meteo)
@@ -97,6 +101,7 @@ async function AppelerMeteo(input) {
     let vent = document.createElement("p")
     vent.innerText = `${meteo.wind.speed} km/h`;
     meteoVent.appendChild(vent);
+
 };
 
 

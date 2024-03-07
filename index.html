@@ -5,26 +5,52 @@
   <title>Météo</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-  <header>
-    <form>
-        <label>Ville :</label>
-        <input type="text" name="ville" id="ville" placeholder="Nom de ville">
-        <button class="validerVille" type="button" id="validerVille" onclick="AppelerMeteo(ville.value)">Rechercher</button>
-    </form>
-  </header>
-    <section>
-        <div class="afficher-meteo" id="afficher-meteo">
-          <!--Stock infos-->
-        </div>
-        <div class="vent" id="vent">
-          <img src="images/vent.png" alt="vent">
-        </div>
-        <div class="humidite" id="humidite">
-          <img src="images/humidite.png" alt="humidité">
-        </div>
-    </section>
-    <footer>Crée par Aurélie Moustardier</footer>
-</body>
+  <body>
+      <header>
+        <h1>Quel temps chez vous ?</h1>
+      </header>
+        <main>
+          <section>
+            <div class="contenaire">
+              <form>
+                <label>Nom de la Ville</label>
+                <input type="text" name="name" class="ville" id="ville" required autocomplete="off" placeholder="ex: Montpellier"/>
+                <div class="wrapper">
+                  <button class="validerVille btn btn-white btn-animate" type="button" id="validerVille" onclick="AppelerMeteo(ville.value)">
+                    Rechercher
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section class="meteo">
+              <div class="afficher-meteo" id="afficher-meteo">
+                <!--Stock infos-->
+              </div>
+          </section>
+          <section>
+            <div class="wind-eau">
+              <div class="wind">
+                <img src="images/vent.png" alt="vent">
+                <div class="vent" id="vent"></div>
+              </div>
+              <div class="eau">
+                <img src="images/humidite.png" alt="humidité">
+                <div class="humidite" id="humidite"></div>
+              </div>
+            </div>
+          </section>
+        </main>
+      <footer>Crée par Aurélie Moustardier</footer>
+  </body>
 </html>
+
+<!--nme c'est id!>
