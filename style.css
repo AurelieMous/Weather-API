@@ -66,13 +66,16 @@ button {
     border: solid 1px #d7c8e6;
     border-radius: 20px;
     text-align: center;
-    
+    display: block;
+    height: 100px;
+    width: 300px;
 }
 button:hover {
     background-color: #381947;
     border: solid 1px #381947;
     border-radius: 20px; 
     color: white;
+    cursor: pointer;
 }
 
 h2 {
@@ -81,6 +84,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    padding-top: 10%;
 }
 
 h3 {
@@ -97,6 +101,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    padding-bottom: 10%;
 }
 
 
@@ -156,4 +161,5 @@ footer {
     font-weight: 500;
     font-style: normal;
     text-align: center;
+    padding-top: 5%;
 }
