@@ -7,13 +7,14 @@ header {
     background-color: #d7c8e6;
     text-align: center;
     padding: 5%;
-    font-size: 1.5em;
+
 }
 
 h1 {
     font-family: "Delius Unicase", cursive;
     font-weight: 700;
     font-style: normal;
+    font-size: 1em;
 }
 
 form {
@@ -27,7 +28,7 @@ form {
 }
 
 label {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -35,9 +36,9 @@ label {
 }
 
 input {
-    height: 100px;
-    width: 500px;
-    font-size: 3em;
+    height: 40px;
+    width: 200px;
+    font-size: 1.5em;
     border : solid black 2px;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
@@ -57,7 +58,7 @@ input:focus::placeholder {
 /*button*/
 
 button {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -67,8 +68,8 @@ button {
     border-radius: 20px;
     text-align: center;
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 60px;
+    width: 200px;
 }
 button:hover {
     background-color: #381947;
@@ -79,7 +80,7 @@ button:hover {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 2em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -88,7 +89,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -96,7 +97,7 @@ h3 {
 }
 
 p {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -115,23 +116,13 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: #d7c8e6;
-    border: solid 1px #d7c8e6;
-}
-
-.meteo {
-    background-image: url(images/meteo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 30%;
-    padding-bottom: 30%;
 }
 
 .wind-eau {
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 24em;
+    gap: 1em;
 }
 
 .wind  {
@@ -140,8 +131,8 @@ p {
     
 }
 .wind img {
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
 }
 
 .eau {
@@ -150,12 +141,12 @@ p {
     
 }
 .eau img {
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
 }
 
 footer {
-    font-size: 3em;
+    font-size: 1.5em;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;

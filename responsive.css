@@ -1,0 +1,22 @@
+
+@media only screen and (min-width: 769px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    * {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    * {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

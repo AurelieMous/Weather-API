@@ -88,8 +88,12 @@ async function AppelerMeteo(input) {
 
     //endroit ou je stocke l'infos
     const meteoHumidite= document.getElementById("humidite")
-
+    
     //humidite
+    let humiditeImage = document.createElement("img")
+    humiditeImage.src = 'images/humidite.png';
+    meteoHumidite.appendChild(humiditeImage);
+
     let humidite = document.createElement("p")
     humidite.innerText = `${meteo.main.humidity} %`;
     meteoHumidite.appendChild(humidite);
@@ -97,6 +101,9 @@ async function AppelerMeteo(input) {
     //endroit ou je stocke l'infos
     const meteoVent= document.getElementById("vent")
 
+    let ventImg = document.createElement("img")
+    ventImg.src = 'images/vent.png';
+    meteoVent.appendChild(ventImg);
     //vent
     let vent = document.createElement("p")
     vent.innerText = `${meteo.wind.speed} km/h`;
