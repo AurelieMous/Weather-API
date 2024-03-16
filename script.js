@@ -1,5 +1,5 @@
 
-const APIKey = '0eee8175d5eda1d78eee24d6db88d7d6';
+const APIKey = process.env.WEATHER_API_KEY;
 let ville = document.getElementById("ville");
 
 async function AppelerMeteo(input) {
